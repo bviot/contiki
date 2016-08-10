@@ -1,6 +1,8 @@
 CONTIKI_PROJECT = bviot-device-lwm2m
 
-CONTIKI_SOURCEFILES += serial-protocol.c example-ipso-temperature.c
+CONTIKI_SOURCEFILES +=  serial-protocol.c \
+						example-ipso-temperature.c \
+						bviot-generic-sensor.c
 
 all: $(CONTIKI_PROJECT)
 

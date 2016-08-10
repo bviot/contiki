@@ -62,7 +62,7 @@
 #include "net/rpl/rpl.h"
 #endif /* UIP_CONF_IPV6_RPL */
 
-#define DEBUG DEBUG_NONE
+#define DEBUG DEBUG_FULL
 #include "net/ip/uip-debug.h"
 
 #ifndef LWM2M_ENGINE_CLIENT_ENDPOINT_PREFIX
@@ -760,7 +760,7 @@ lwm2m_engine_select_reader(lwm2m_context_t *context, unsigned int content_format
       context->reader = &lwm2m_plain_text_reader;
       break;
     default:
-      PRINTF("Unknown content type %u, using LWM2M plain text\n", accept);
+      PRINTF("Unknown content type %u, using LWM2M plain text\n", content_format);
       context->reader = &lwm2m_plain_text_reader;
       break;
   }

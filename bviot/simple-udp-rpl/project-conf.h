@@ -40,7 +40,7 @@
 //#define PLATFORM_REBOOT watchdog_reboot
 #endif
 
-#define IPSO_TEMPERATURE example_ipso_temperature
+#define IPSO_TEMPERATURE bviot_generic_sensor
 
 #ifndef WITH_NON_STORING
 #define WITH_NON_STORING 0 /* Set this to run with non-storing mode */
